@@ -1,0 +1,46 @@
+.container{
+    width: $lebar-cont;
+    margin: $tengah-x;
+}
+.main{  
+    width: 600px / $lebar-cont * 100%;
+    float: left;
+
+}   
+.sidebar{
+    width: 360px / $lebar-cont * 100%;
+    float: left;
+}
+h1{
+    font-family: $font;
+    font-size: $size;
+    color: salmon;
+}
+
+// nesting + pseudo class
+ul{
+    li{
+        display: inline-block;
+        list-style: none;
+        a{
+            @extend %linkbiasa;
+        }
+    }
+}
+
+.button{
+    text-align: center;
+    width: 200px;
+    padding: 3px;
+    @include border-radius(10px);
+}
+
+.suka{
+    background-color: rgb(31, 210, 222);
+}
+.standar{
+    background-color: rgb(121, 222, 31);
+}
+.emosi{
+    background-color: rgb(252, 76, 0);
+}

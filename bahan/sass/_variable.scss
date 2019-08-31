@@ -1,0 +1,23 @@
+$font : "Sniglet", cursive;
+$size : 32px;
+$color : salmon; 
+$warna-link : gray;
+$lebar-cont : 960px;
+$tengah-x: 0 auto;
+
+
+
+// extend
+%linkbiasa{
+    color: $warna-link;
+    text-decoration: none;
+}
+
+// mixin
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -ms-border-radius:$radius;
+    -moz-border-radius:$radius;
+    -o-border-radius:$radius;
+    -webkit-border-radius:$radius;
+}
